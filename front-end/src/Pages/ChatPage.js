@@ -3,7 +3,7 @@ import React from 'react'
 const ChatPage = () => {
   return (
     <div>
-      Hello I am chat
+      <h1>Hello I am chat</h1>
     </div>
   )
 }
