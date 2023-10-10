@@ -17,6 +17,7 @@ app.get('/api/chat',(req,res)=>{
 app.get('/api/chat/:id',(req,res)=>{
     const singleChat = chats.find((c)=>c._id === req.params.id)
     res.send(singleChat);
+    // console.log(req.params.id);
 })
 
 const PORT = process.env.PORT || 5500;
