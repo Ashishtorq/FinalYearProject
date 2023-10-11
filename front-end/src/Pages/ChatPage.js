@@ -1,17 +1,18 @@
 import { background, useEditable } from "@chakra-ui/react";
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 const ChatPage = () => {
+  const [chat,setChat] = useState([]);
   const fetchChat = async () => {
-    const data = await axios.get('/api/chat');
-   // console.log(data);
+    const {data} = await axios.get('/api/chat');
+    setChat(data);
   };
   useEffect(() => {
     fetchChat();
   });
   return (
     <Fragment>
-      <h1>Hello I am chat</h1>
+     
     </Fragment>
   );
 };
