@@ -1,20 +1,15 @@
-import { background, useEditable } from "@chakra-ui/react";
-import React, { Fragment, useEffect, useState } from "react";
-import axios from "axios"; //  use to fetch data from backend using url (localhost:5500)
+import React, { useEffect } from "react";
+import axios from "axios";
 const ChatPage = () => {
-  const [chat, setChat] = useState([]);
   const fetchChat = async () => {
-    const { data } = await axios.get("/api/chat");
-    setChat(data);
+    const data = await axios.get('http://localhost:3000/api/chat');
+    console.log(data);
   };
   useEffect(() => {
     fetchChat();
-  });
-  return 
-  <Fragment>
-  
-  
-  </Fragment>;
+  }, []);
+  return <div>
+    {chats.map((chat)=><div> key={chat._id}{chat.chatName}</div>)}
+  </div>;
 };
-
 export default ChatPage;
