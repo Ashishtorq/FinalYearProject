@@ -10,7 +10,11 @@ const ChatPage = () => {
   useEffect(() => {
     fetchChat();
   });
-  return <Fragment></Fragment>;
+  return 
+  <Fragment>
+  
+  
+  </Fragment>;
 };
 
 export default ChatPage;
