@@ -1,0 +1,70 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #9B93DB, #F0D4E1);
+    position: relative;
+}
+
+.card {
+    position: relative;
+    border: 1px solid black;
+    height: 60vh;
+    width: 25vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212234;
+    box-shadow: 0 60px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 15px;
+}
+
+.bdr {
+    border: 3px dotted #fff;
+    height: 70%;
+    width: 72%;
+    border-radius: 7px;
+    position: relative;
+    position: absolute;
+    top: 8%;
+}
+
+
+.container .card .bdr p {
+    text-align: center;
+    font-size: larger;
+    color: #F0D4E1;
+}
+
+.container .card .bdr img {
+    width: 95%;
+    cursor: pointer;
+}
+
+.container .card .bdr .btn {
+    position: absolute;
+    bottom: -20%;
+    left: 21%;
+    height: 14%;
+    width: 60%;
+    border-radius: 0px 10px;
+    background: #F0D4E1;
+    color: #212234;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.container .card .bdr .btn:hover{
+    background-color: #9B93DB;
+}
